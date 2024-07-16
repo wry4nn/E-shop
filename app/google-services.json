@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "966213748777",
+    "firebase_url": "https://e-commerce-integration-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "e-commerce-integration",
+    "storage_bucket": "e-commerce-integration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966213748777:android:f507952954ad6f6ac83438",
+        "android_client_info": {
+          "package_name": "com.example.e_shop1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvOTpZAm7KwIdaOpCPP1DWj_1cq8qlTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966213748777:android:c0a2f164f506b4c1c83438",
+        "android_client_info": {
+          "package_name": "com.example.eshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvOTpZAm7KwIdaOpCPP1DWj_1cq8qlTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

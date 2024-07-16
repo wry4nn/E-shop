@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDAAD0"
+    android:backgroundTint="#EAC3F4"
+    tools:context=".PopoutActivity">
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="263dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="100dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Welcome to E-shop"
+        android:textColor="#2C2727"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="124dp"
+        android:text="the ultimate e-commerce platform designed to transform your online shopping experience."
+        android:textColor="#332C2C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotext" />
+
+    <Button
+        android:id="@+id/LogInbutton"
+        android:layout_width="329dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="104dp"
+        android:text="Proceed"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
