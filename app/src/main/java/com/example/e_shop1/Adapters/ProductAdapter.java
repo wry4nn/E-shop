@@ -1,4 +1,4 @@
-package com.example.e_shop1;
+package com.example.e_shop1.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,14 +7,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-
-import java.util.ArrayList;
+import com.example.e_shop1.Product;
+import com.example.e_shop1.R;
 import java.util.List;
+import com.squareup.picasso.Picasso;
+
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
 
-    private List<Product> productList = new ArrayList<>();
+    private List<Product> productList;
 
     public ProductAdapter(List<Product> productList) {
         this.productList = productList;
@@ -30,10 +31,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         Product product = productList.get(position);
-        holder.titleTxt.setText(product.getTitle());
+        holder.titleTxt.setText(product.getName());
         holder.descriptionTxt.setText(product.getDescription());
-        holder.priceTxt.setText("$" + product.getPrice());
-
+        holder.priceTxt.setText(String.format("$%.2f", product.getPrice()));
+//        Picasso.get().load(product.getImageUrl()).into(holder.productView);
     }
 
     @Override
@@ -41,17 +42,18 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return productList.size();
     }
 
-    public static class ProductViewHolder extends RecyclerView.ViewHolder {
-        TextView titleTxt, descriptionTxt, priceTxt;
+    static class ProductViewHolder extends RecyclerView.ViewHolder {
         ImageView productView;
+        TextView titleTxt;
+        TextView descriptionTxt;
+        TextView priceTxt;
 
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
+            productView = itemView.findViewById(R.id.productView);
             titleTxt = itemView.findViewById(R.id.titleTxt);
             descriptionTxt = itemView.findViewById(R.id.descriptionTxt);
             priceTxt = itemView.findViewById(R.id.priceTxt);
-            productView = itemView.findViewById(R.id.productView);
         }
     }
 }
-

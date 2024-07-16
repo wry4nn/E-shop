@@ -32,6 +32,8 @@
     	</list>
     -->
     <list>
+        <mapping class="com.example.e_shop1.Category"/>
+        <mapping class="com.yourpackage.Product" />
     </list>
 
     <!--
